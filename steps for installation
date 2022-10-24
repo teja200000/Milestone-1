@@ -1,0 +1,17 @@
+Steps:
+1. Open command prompt
+2. Using the command wsl —install wsl on the command prompt or power shell.
+3. After installation, change the version from 1 to 2.
+4. Then install the docker application in the PC and create an account.
+5. Restart the PC
+6. Now install the the gitbash for windows and sign up.
+7. To open the cvat, type the command cvat. The instructions are as follows:
+   - git clone https://github.com/opencv/cvat
+   - cd cvat
+   - docker-compose up -d
+   - winpty docker exec -it cvat_server bash -ic 'python3 ~/manage.py createsuperuser'
+   - create username and password
+   - enter the username and password
+   - Make sure the docker window is running sideways to your application.
+   - Now we can find that cvat is ruuning and is shown in docker window.
+   - Installation completed.
